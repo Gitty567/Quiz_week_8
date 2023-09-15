@@ -22,7 +22,7 @@ for r in row:
     co2.append(co2_Num)
     temp.append(temp_Num)
 
-# then I cna close the cursor and connection functions. Now that this is done, the matplotlib can do its job in
+# then I can close the cursor and connection functions. Now that this is done, the matplotlib can do its job in
 # generating the graphs
 cursor.close()
 connection.close()
