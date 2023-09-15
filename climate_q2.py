@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r"./climate.csv")
+df = pd.read_csv("climate.csv")
 
 # Instead of appending, I added each column data to the existing list and simply just used the 'tolist()' method to
 # add the corresponding data.
@@ -23,7 +23,7 @@ plt.subplot(2, 1, 2)
 plt.plot(years, temp, 'r*-')
 plt.ylabel("Temp (C)")
 plt.xlabel("Year")
-
+plt.savefig("co2_temp_2.png")
 plt.tight_layout()
 
 plt.show()
